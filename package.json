@@ -21,7 +21,9 @@
     "build:image": "node scripts/build-runner/build.js",
     "build:image:beta": "BUILD_TAG=beta node scripts/build-runner/build.js",
     "build:doc": "node scripts/build-doc && npm run build:markdown",
-    "build:markdown": "node scripts/markdown-render.js"
+    "build:markdown": "node scripts/markdown-render.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.1",
@@ -32,7 +34,8 @@
     "eslint-plugin-header": "^3.1.0",
     "lerna": "^3.20.2",
     "license-checker": "^25.0.1",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
     "@cloudbase/toolbox": "^0.6.0",
